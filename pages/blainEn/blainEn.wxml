@@ -1,0 +1,226 @@
+<!-- 背景----------- -->
+<view class='bgWrap'>
+  <image src='{{imgPath}}leidaBg.jpg'></image>
+</view>
+<!-- 内容----------- -->
+<view class='djMianWrap'>
+  <view class='centerWrap'>
+    <image mode='widthFix' class='bg' src='{{imgPath}}rotateBg.png'></image>
+    <canvas canvas-id="firstCanvas">
+ 
+    <!-- 红色小点2 -->
+    <cover-view class='redCir cir2 {{actionFlag&&cir1?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d2@2x.png'></cover-image>
+    </cover-view>
+    <cover-view class='redCir cir2 {{actionFlag&&cir8?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d2@2x.png'></cover-image>
+    </cover-view>
+    <cover-view class='redCir cir2 {{actionFlag&&cir5?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d2@2x.png'></cover-image>
+    </cover-view>
+    <cover-view class='redCir cir2 {{actionFlag&&cir3?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d2@2x.png'></cover-image>
+    </cover-view>
+    <!-- ---蓝色小点2 -->
+    <cover-view class='redCir cir2 {{actionFlag&&cir2?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d@2x.png'></cover-image>
+    </cover-view>
+    <cover-view class='redCir cir2 {{actionFlag&&cir6?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d@2x.png'></cover-image>
+    </cover-view>
+    <cover-view class='redCir cir2 {{actionFlag&&cir7?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d@2x.png'></cover-image>
+    </cover-view>
+    <cover-view class='redCir cir2 {{actionFlag&&cir4?"loadCirAct9":""}}'>
+      <cover-image mode='widthFix' src='{{imgPath}}jdbk_d@2x.png'></cover-image>
+    </cover-view>
+    <!-- 问题框111111 -->
+    <cover-view class='qusBox qus11 qus1 {{(outQusHas==1)&&rot5?"qusAct1":""}}' >
+      <cover-image mode='widthFix' class='{{(outQusHas==1)&&rot5?"boxAct1":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{(outQusHas==1)&&rot5?"txetAct1":""}}'> </cover-view>
+      <cover-view class='t {{(outQusHas==1)&&rot5?"textOutAct1":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus12 qus1 {{(outQusHas==1)&&(rot1)?"qusAct2":""}}'>
+      <cover-image mode='widthFix' class='{{(outQusHas==1)&&(rot1)?"boxAct2":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{(outQusHas==1)&&(rot1)?"txetAct2":""}}'>
+      </cover-view>
+      <cover-view class='t {{(outQusHas==1)&&(rot1)?"textOutAct2":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+
+    </cover-view>
+    <cover-view class='qusBox qus13 qus1 {{outQusHas==1&&rot4?"qusAct3":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==1&&rot4?"boxAct3":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==1&&rot4?"txetAct3":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==1&&rot4?"textOutAct3":""}}'>
+      <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+
+    </cover-view>
+    <cover-view class='qusBox qus14 qus1 {{outQusHas==1&&rot2?"qusAct4":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==1&&rot2?"boxAct4":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==1&&rot2?"txetAct4":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==1&&rot2?"textOutAct4":""}}'>
+       <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+
+    </cover-view>
+    <cover-view class='qusBox qus15 qus1 {{outQusHas==1&&rot3?"qusAct5":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==1&&rot3?"boxAct5":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==1&&rot3?"txetAct5":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==1&&rot3?"textOutAct5":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+
+    </cover-view>
+    <!-- 问题框222222 -->
+    <cover-view class='qusBox qus21 qus2 {{outQusHas==2&&rot1?"qusAct1":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==2&&rot1?"boxAct1":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==2&&rot1?"txetAct1":""}}'></cover-view>
+       <cover-view class='t {{outQusHas==2&&rot1?"textOutAct1":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus22 qus2 {{outQusHas==2&&rot5?"qusAct2":""}}' >
+      <cover-image mode='widthFix' class='{{outQusHas==2&&rot5?"boxAct2":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==2&&rot5?"txetAct2":""}}'></cover-view>
+       <cover-view class='t {{outQusHas==2&&rot5?"textOutAct2":""}}'>
+       <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus23 qus2 {{outQusHas==2&&rot2?"qusAct3":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==2&&rot2?"boxAct3":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==2&&rot2?"txetAct3":""}}'> </cover-view>
+       <cover-view class='t {{outQusHas==2&&rot2?"textOutAct3":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus24 qus2 {{outQusHas==2&&rot4?"qusAct4":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==2&&rot4?"boxAct4":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==2&&rot4?"txetAct4":""}}'></cover-view>
+       <cover-view class='t {{outQusHas==2&&rot4?"textOutAct4":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus25 qus2 {{outQusHas==2&&rot3?"qusAct5":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==2&&rot3?"boxAct5":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==2&&rot3?"txetAct5":""}}'> </cover-view>
+       <cover-view class='t {{outQusHas==2&&rot3?"textOutAct5":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <!-- 问题框4444444 -->
+    <cover-view class='qusBox qus41 qus4 {{outQusHas==4&&rot1?"qusAct1":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==4&&rot1?"boxAct1":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==4&&rot1?"txetAct1":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==4&&rot1?"textOutAct1":""}}'>
+       <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus42 qus4 {{outQusHas==4&&rot5?"qusAct2":""}}' >
+      <cover-image mode='widthFix' class='{{outQusHas==4&&rot5?"boxAct2":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==4&&rot5?"txetAct2":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==4&&rot5?"textOutAct2":""}}'>
+       <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus43 qus4 {{outQusHas==4&&rot2?"qusAct3":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==4&&rot2?"boxAct3":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==4&&rot2?"txetAct3":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==4&&rot2?"textOutAct3":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus44 qus4 {{outQusHas==4&&rot4?"qusAct4":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==4&&rot4?"boxAct4":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==4&&rot4?"txetAct4":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==4&&rot4?"textOutAct4":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus45 qus4 {{outQusHas==4&&rot3?"qusAct5":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==4&&rot3?"boxAct5":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==4&&rot3?"txetAct5":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==4&&rot3?"textOutAct5":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <!-- 问题框3333333 -->
+    <cover-view class='qusBox qus31 qus3 {{outQusHas==3&&rot1?"qusAct1":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==3&&rot1?"boxAct1":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==3&&rot1?"txetAct1":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==3&&rot1?"textOutAct1":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus32 qus3 {{outQusHas==3&&rot5?"qusAct2":""}}' >
+      <cover-image mode='widthFix' class='{{outQusHas==3&&rot5?"boxAct2":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==3&&rot5?"txetAct2":""}}'></cover-view>
+      <cover-view class='t {{outQusHas==3&&rot5?"textOutAct2":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus33 qus3 {{outQusHas==3&&rot4?"qusAct3":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==3&&rot4?"boxAct3":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==3&&rot4?"txetAct3":""}}'></cover-view>
+      <cover-view class='t {{outQusHas==3&&rot4?"textOutAct3":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus34 qus3 {{outQusHas==3&&rot2?"qusAct4":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==3&&rot2?"boxAct4":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==3&&rot2?"txetAct4":""}}'> </cover-view>
+      <cover-view class='t {{outQusHas==3&&rot2?"textOutAct4":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='qusBox qus35 qus3 {{outQusHas==3&&rot3?"qusAct5":""}}'>
+      <cover-image mode='widthFix' class='{{outQusHas==3&&rot3?"boxAct5":""}}' src='{{imgPath}}qusBox.png'></cover-image>
+      <cover-view class='text {{outQusHas==3&&rot3?"txetAct5":""}}'>
+      </cover-view>
+      <cover-view class='t {{outQusHas==3&&rot3?"textOutAct5":""}}'>
+        <cover-view>为什么</cover-view>
+        <cover-view>起黑头？</cover-view>
+      </cover-view>
+    </cover-view>
+     </canvas> 
+  </view>
+  <view class='speedBtnWrap' bindtap='speedHanld'>
+    <view class='btnText {{hiddenFlag?"speedBtnAct":""}}' style='display:{{hiddenFlag?"none":"block"}}'>刷新</view>
+    <view class='hiddenWrap'>
+      <view class='hiddenText {{hiddenFlag?"hiddenTextAct":""}}'>
+      刷新成功
+      </view>
+    </view>
+  </view>
+</view>

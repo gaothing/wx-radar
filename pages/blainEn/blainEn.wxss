@@ -1,0 +1,602 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.bgWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bgWrap image {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------内容 */
+
+.djMianWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 30rpx;
+}
+
+.searchIcon {
+  float: left;
+  height: 80rpx;
+  margin-top: 30rpx;
+}
+
+.searchIcon image {
+  width: 66rpx;
+  margin-top: 5rpx;
+}
+
+.searchIn {
+  width: 690rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 4px 13px #3b5362;
+}
+
+.pClass {
+  color: #bbbcbc;
+}
+
+.searchIn .s {
+  width: 40rpx;
+  height: 40rpx;
+  overflow: hidden;
+  position: absolute;
+  right: 40rpx;
+  top: 20rpx;
+}
+
+.searchIn input {
+  height: 100%;
+  width: 100%;
+  padding-left: 62rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+/* ----------------------- */
+
+/* 中心 */
+
+.centerWrap {
+  width: 291px;
+  height: 291rpx;
+  position: relative;
+  margin: 140rpx auto;
+}
+.centerWrap .sao{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.centerWrap canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 291px;
+  height: 291px;
+}
+
+/* 红色和蓝色小点的位置固定 */
+
+.redCir {
+  position: absolute;
+  width: 42rpx;
+  height: 42rpx;
+  overflow: hidden;
+  opacity: 0;
+  transform-origin: center center;
+}
+
+.cir2 {
+  opacity: 1;
+  transform: scale(0);
+}
+
+
+
+
+/*小点的位置固定 */
+
+.redCir:nth-child(1) {
+  top: 140rpx;
+  left: 356rpx;
+}
+
+.redCir:nth-child(2) {
+  top: 210rpx;
+  left: 156rpx;
+}
+
+.redCir:nth-child(3) {
+  top: 480rpx;
+  left: 256rpx;
+}
+
+.redCir:nth-child(4) {
+  top: 370rpx;
+  left: 346rpx;
+}
+
+.redCir:nth-child(5) {
+  top: 280rpx;
+  left: 436rpx;
+}
+
+.redCir:nth-child(6) {
+  top: 480rpx;
+  left: 136rpx;
+}
+
+.redCir:nth-child(7) {
+  top: 250rpx;
+  left: 76rpx;
+}
+
+.redCir:nth-child(8) {
+  top: 450rpx;
+  left: 426rpx;
+}
+
+/* 小点（红点和蓝点）随着扫描而出现的动画 ----------------------------*/
+
+/* 小红点和小蓝点出现时的动画 */
+
+@keyframes litterCir {
+  0% {
+    transform: scaleZ(0);
+  }
+
+  100% {
+    transform: scaleZ(1);
+  }
+}
+
+/* 小红点和小蓝点的缩放动画 */
+
+@keyframes litterCir2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 第一波小点的动画 */
+
+.loadCirAct1 {
+  animation: litterCir 0.4s linear 2.5s forwards, litterCir2 1s linear 2.9s infinite;
+}
+
+.loadCirAct2 {
+  animation: litterCir 0.4s linear 2.2s forwards, litterCir2 1s linear 2.6s infinite;
+}
+
+.loadCirAct3 {
+  animation: litterCir 0.4s linear 2.1s forwards, litterCir2 1s linear 2.5s infinite;
+}
+
+.loadCirAct4 {
+  animation: litterCir 0.4s linear 1.9s forwards, litterCir2 1s linear 2.3s infinite;
+}
+
+.loadCirAct5 {
+  animation: litterCir 0.4s linear 1.8s forwards, litterCir2 1s linear 2.2s infinite;
+}
+
+.loadCirAct6 {
+  animation: litterCir 0.4s linear 1.3s forwards, litterCir2 1s linear 1.7s infinite;
+}
+
+.loadCirAct7 {
+  animation: litterCir 0.4s linear 0.7s forwards, litterCir2 1s linear 1.1s infinite;
+}
+
+.loadCirAct8 {
+  animation: litterCir 0.4s linear 0.2s forwards, litterCir2 1s linear 0.6s infinite;
+}
+
+/* 第二波小点的动画 */
+
+.loadCirAct9 {
+  animation: litterCir 0.4s linear forwards, litterCir2 1s linear 0.6s infinite;
+}
+
+
+/* 加速 */
+
+/* 点击加速按钮按钮的动画 */
+
+.speedBtnWrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 380rpx;
+  transform-style: preserve-3d;
+}
+
+.speedBtnWrap image {
+  width: 100%;
+}
+
+.speedBtnWrap .btnText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 84rpx;
+  margin: auto;
+  width: 574rpx;
+  height: 87rpx;
+  border-radius: 87rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 87rpx;
+  font-size: 28rpx;
+  opacity: 0.8;
+  letter-spacing: 6rpx;
+  background: #0ecbe4;
+}
+
+.speedBtnWrap .hiddenText {
+  position: absolute;
+  left: 0;
+  bottom: 30rpx;
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  transform-style: preserve-3d;
+  transform-origin: center center -50px;
+  transform: rotateX(-90deg);
+}
+
+.hiddenTextAct {
+  animation: hiddenTextAct 3s linear forwards;
+}
+
+@keyframes speedBtnAct {
+  0% {
+    display: block;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+@keyframes hiddenTextAct {
+  0% {
+    transform: rotateX(-40deg);
+    font-size: 20rpx;
+  }
+
+  50% {
+    transform: rotateX(0deg);
+    font-size: 32rpx;
+  }
+
+  80% {
+    transform: rotateX(0deg);
+    font-size: 32rpx;
+  }
+
+  100% {
+    transform: rotateX(40deg);
+    font-size: 20rpx;
+  }
+}
+
+.hiddenWrap {
+  height: 200rpx;
+  position: absolute;
+  left: 0;
+  bottom: 90rpx;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ---------------------------- */
+
+/* 五个问题框 */
+
+.qusBox {
+  position: absolute;
+  width: 254rpx;
+  height: 105rpx;
+opacity: 0
+}
+
+.qusBox image {
+  width: 254rpx;
+  height: 105rpx;
+  position: absolute;
+  left: -17rpx;
+  top: -7rpx;
+  transform: scaleY(0)
+}
+.qusBox cover-image {
+  width: 247rpx;
+   height: 67rpx; 
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  z-index: 99999;
+  transform: scaleY(0)
+}
+.qusBox .text {
+  margin-left: 15rpx;
+  margin-top: 6rpx;
+  width: 222rpx;
+  height: 52rpx;
+  background: rgba(0, 222, 237, 0.8);
+ transform: scaleX(0);
+ transform-origin: center center center; 
+}
+.qusBox  .t{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 67rpx;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 54rpx;
+  opacity: 0
+}
+.qusBox .t text {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #fff;
+}
+.qusBox .t cover-view {
+  width: 50%;
+  float: left;
+  height: 100%;
+  line-height: 67rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+.qusBox .t cover-view:nth-child(1) {
+ text-align: right;
+ font-size: 22rpx;
+ padding-right: 10rpx;
+ box-sizing: border-box
+}
+.qus11 {
+  left: 74rpx;
+  top: 0rpx;
+}
+
+.qus12 {
+  right: 0rpx;
+  top: 143rpx;
+}
+
+.qus13 {
+  left: 9rpx;
+  top: 203rpx;
+}
+
+.qus14 {
+  right: 0rpx;
+  top: 291rpx;
+}
+
+.qus15 {
+  left: 86rpx;
+  top: 404rpx;
+}
+
+/* 222222222 */
+
+.qus21 {
+  right: 13rpx;
+  top: 28rpx;
+}
+
+.qus22 {
+  left: 0rpx;
+  top: 132rpx;
+}
+
+.qus23 {
+  right: 46rpx;
+  top: 212rpx;
+}
+
+.qus24 {
+  left: 104rpx;
+  top: 369rpx;
+}
+
+.qus25 {
+  right: 59rpx;
+  top: 517rpx;
+}
+
+/* 333333333 */
+
+.qus31 {
+  right: 13rpx;
+  top: 28rpx;
+}
+
+.qus32 {
+  left: 0rpx;
+  top: 132rpx;
+}
+
+.qus33 {
+  left: 65rpx;
+  top: 268rpx;
+}
+
+.qus34 {
+  right: 0rpx;
+  top: 368rpx;
+}
+
+.qus35 {
+  left: 0rpx;
+  top: 507rpx;
+}
+
+/* 44444444 */
+
+.qus41 {
+  right: 13rpx;
+  top: 28rpx;
+}
+
+.qus42 {
+  left: rpx;
+  top: 145rpx;
+}
+
+.qus43 {
+  right: 0rpx;
+  top: 224rpx;
+}
+
+.qus44 {
+  left: 24rpx;
+  top: 363rpx;
+}
+
+.qus45 {
+  right: 0rpx;
+  top: 440rpx;
+}
+
+.qusAct1 {
+ opacity: 1
+}
+
+.qusAct2 {
+  opacity: 1
+}
+
+.qusAct3 {
+  opacity: 1
+}
+
+.qusAct4 {
+ opacity: 1
+}
+
+.qusAct5 {
+   opacity: 1
+}
+.boxAct1 {
+  animation: boxAct 0.4s linear  forwards;
+}
+.boxAct2 {
+  animation: boxAct 0.4s linear forwards;
+}
+.boxAct3 {
+  animation: boxAct 0.4s linear  forwards;
+}
+.boxAct4 {
+  animation: boxAct 0.4s linear  forwards;
+}
+.boxAct5 {
+  animation: boxAct 0.4s linear   forwards;
+}
+.txetAct1{
+  animation: textAct 0.4s linear 0.4s forwards; 
+}
+.txetAct2{
+  animation: textAct 0.4s linear 0.4s forwards; 
+}
+.txetAct3{
+  animation: textAct 0.4s linear 0.4s forwards; 
+}
+.txetAct4{
+  animation: textAct 0.4s linear 0.4s  forwards; 
+}
+.txetAct5{
+  animation: textAct 0.4s linear 0.4s  forwards; 
+}
+.textOutAct1{
+  animation: textOutAct 0.2s linear 0.8s  forwards;
+}
+.textOutAct2{
+  animation: textOutAct 0.2s linear 0.8s forwards;
+}
+.textOutAct3{
+  animation: textOutAct 0.2s linear 0.8s  forwards;
+}
+.textOutAct4{
+  animation: textOutAct 0.2s linear 0.8s  forwards;
+}
+.textOutAct5{
+  animation: textOutAct 0.2s linear 0.8s forwards;
+}
+/* ---------------- */
+@keyframes boxAct {
+  0% {
+    transform: scaleY(0);
+  }
+  33.3%{
+     transform: scale(1);
+  }
+  66.6%{
+    transform: scaleY(0)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes textAct {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes textOutAct{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
+}

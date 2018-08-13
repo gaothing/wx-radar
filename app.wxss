@@ -1,0 +1,114 @@
+::-webkit-scrollbar  
+{  
+    width: 0;  
+    height: 0; 
+    color: transparent;  
+}  
+.ftLeft{
+  float: left
+}
+.ftRight{
+  float: right
+}
+icon{
+  vertical-align: middle
+}
+image{
+  width: 100%;
+  vertical-align: middle
+}
+/* 字体颜色 */
+/* 默认值 */
+view,text{
+  color: #333;
+  font-size: 24rpx;
+  box-sizing: border-box
+}
+/* 按钮样式 */
+/* 上传按钮 */
+.btnWrap {
+  width: 576rpx;
+  height: 88rpx;
+  position: relative;
+  border-radius: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: #fff;
+  font-size: 32rpx;
+  overflow: hidden;
+  margin: 40rpx auto;
+  background: #327ff1;
+  /* box-shadow: 0 4rpx 44rpx rgba(49, 131, 246, 0.5); */
+}
+.btnWrapAct{
+  background: #D7D7D7;
+  box-shadow: 0 0 0 transparent;
+}
+.btnWrap .btnList{
+  float: left;
+  width: 50%;
+  height: 100%;
+  /* background: -webkit-gradient(linear, left 0, right 0, from(rgba(76, 208, 227, 1)), to(rgba(114, 163, 243, 1))); */
+}
+.btnWrap .two{
+  float: left;
+  width: 50%;
+  height: 100%;
+  /* background: -webkit-gradient(linear, left 0, right 0, from(rgba(114, 163, 243, 1)), to(RGBA(21, 18, 185, 1))); */
+}
+.btnWrap .btn{
+  width: 576rpx;
+  height: 88rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: #fff;
+  font-size: 32rpx;
+  box-shadow: 0 4rpx 44rpx rgba(49, 131, 246, 0.5);
+}
+/* -------- */
+
+.sendBox {
+  width: 100%;
+  height: 106rpx;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0rpx;
+  padding: 8rpx 30rpx;
+  padding-bottom: 26rpx
+}
+
+.sendBox .in {
+  float: left;
+  width: 542rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  border-radius: 72rpx;
+  box-shadow: 0 4rpx 20rpx #f0f0f0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.sendBox .in input {
+  width: 100%;
+  height: 100%;
+  padding-left: 32rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+
+.sendBox .send {
+  float: right;
+  width: 128rpx;
+  height: 72rpx;
+  border-radius: 72rpx;
+  background: #327ff1;
+  color: #fff;
+  line-height: 72rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 16rpx #cfcfcf;
+}

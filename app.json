@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/blainEn/blainEn"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "雷达",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 100
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "downloadFile": 5000
+  }
+}
