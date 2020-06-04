@@ -77,7 +77,7 @@ Page({
     const cir6 = 210;
     const cir7 = 280;
     const cir8 = 310;
-    var context = wx.createCanvasContext('firstCanvas')
+    var context = wx.createCanvasContext('firstCanvas');
     var t = setInterval(function () {
       if (Math.abs(rot1 - rotate % 360) < 3) {
         self.setData({
@@ -135,15 +135,15 @@ Page({
         })
       }
       context.save();
-      context.beginPath()
-      context.translate(146, 146)
+      context.beginPath();
+      context.translate(146, 146);
       rotate += 2;//旋转角度自增1  
       context.rotate(rotate * Math.PI / 180)//设置旋转的角度  
-      context.drawImage("../../images/icon/ro.png", -146, -146, 291, 291)
+      context.drawImage("../../images/icon/ro.png", -146, -146, 291, 291);
       context.closePath();
-      context.fill()
-      context.restore()
-      context.draw()
+      context.fill();
+      context.restore();
+      context.draw();
       if (scanTime) {
         clearInterval(t);
         self.apeedScan(rotate)
@@ -160,17 +160,17 @@ Page({
       if (scanTime) {
 
         context.save();
-        context.beginPath()
-        context.translate(146, 146)
+        context.beginPath();
+        context.translate(146, 146);
         rotate += 3;//旋转角度自增1  
         context.rotate(rotate * Math.PI / 180)//设置旋转的角度  
         context.drawImage("../../images/icon/ro.png", -146, -146, 291, 291)
         context.closePath();
-        context.fill()
-        context.restore()
-        context.draw()
+        context.fill();
+        context.restore();
+        context.draw();
       } else {
-        clearInterval(s)
+        clearInterval(s);
         self.scan(rotate)
       }
     }, 5)
@@ -181,7 +181,6 @@ Page({
     if (outQus == num) {
       this.makeNum(outQus)
     } else {
-      console.log(num)
       return num;
     }
   },
